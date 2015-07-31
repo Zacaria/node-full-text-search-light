@@ -1,6 +1,6 @@
 {
-  "name": "full-text-search-light",
-  "version": "0.0.11",
+  "name": "full-text-search",
+  "version": "0.0.12",
   "description": "A pure in JS written full text search with an easy to use API.",
   "scripts": {
     "test": "mocha test"
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/frankred/node-full-text-search-light.git"
+    "url": "https://github.com/Zacaria/node-full-text-search-light"
   },
   "keywords": [
     "full",
@@ -29,10 +29,10 @@
     "light",
     "fast"
   ],
-  "author": "Frank Roth <frankred@web.de> (http://blog.mynotiz.de/)",
+  "author": "Zacaria",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/frankred/node-full-text-search-light/issues"
   },
-  "homepage": "https://github.com/frankred/node-full-text-search-light"
+  "homepage": "https://github.com/Zacaria/node-full-text-search-light"
 }
