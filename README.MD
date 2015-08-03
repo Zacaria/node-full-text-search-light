@@ -17,27 +17,27 @@ You can add every kind of data, also complex objects.
 ## Install
 ### From NPM
 ```sh
-npm install full-text-search-light
+npm install full-text-search
 ```
 
 ### From GitHub
 ```sh
-npm install git+https://github.com/frankred/node-full-text-search-light.git
+npm install git+https://github.com/Zacaria/node-full-text-search.git
 ```
 
 ## Documentation
 
 ### Init
 ```js
-var fulltextsearchlight = require('full-text-search-light');
-var search = new fulltextsearchlight();
+var fullTextSearch = require('full-text-search');
+var search = new fullTextSearch();
 ```
 
 You can also change some configuration values according to the full text search.
 
 ```js
-var fulltextsearchlight = require('full-text-search-light');
-var search = new fulltextsearchlight({
+var fullTextSearch = require('full-text-search');
+var search = new fullTextSearch({
   ignore_case: false,   // default = true, Ignore case during all search queries
   index_amount: 8;   // default = 12, The more indexes you have, the faster can be your search but the slower the 'add' method  gets
 });
@@ -111,8 +111,8 @@ var result = search.search('pau');
 
 ### Save and Load
 ```js
-var fulltextsearchlight = require('full-text-search-light');
-var search = new fulltextsearchlight();
+var fullTextSearch = require('full-text-search');
+var search = new fullTextSearch();
 
 // Add
 search.add('Hello World');
