@@ -150,7 +150,7 @@ FullTextSearchLight.prototype.addToIndex = function (obj, index, filter) {
         ++this.single_data_counter;
 
         // Create all parts for all indexes
-        for (var i = self.minimum_chars; i < this.indexes.length; i++) {
+        for (var i = self.config.minimum_chars - 1; i < this.indexes.length; i++) {
 
             if (obj.constructor === String) {
                 log('Type of data: String');
