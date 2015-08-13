@@ -17,7 +17,8 @@ function FullTextSearchLight(options) {
 
     var default_options = {
         index_amount: 12,
-        ignore_case: true
+        ignore_case: true,
+        minimum_chars: 1
     };
 
     this.config = merge(default_options, options);
@@ -149,7 +150,7 @@ FullTextSearchLight.prototype.addToIndex = function (obj, index, filter) {
         ++this.single_data_counter;
 
         // Create all parts for all indexes
-        for (var i = 0; i < this.indexes.length; i++) {
+        for (var i = self.minimum_chars; i < this.indexes.length; i++) {
 
             if (obj.constructor === String) {
                 log('Type of data: String');

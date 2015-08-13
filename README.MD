@@ -39,7 +39,8 @@ You can also change some configuration values according to the full text search.
 var fullTextSearch = require('full-text-search');
 var search = new fullTextSearch({
   ignore_case: false,   // default = true, Ignore case during all search queries
-  index_amount: 8;   // default = 12, The more indexes you have, the faster can be your search but the slower the 'add' method  gets
+  index_amount: 8,      // default = 12, The more indexes you have, the faster can be your search but the slower the 'add' method  gets
+  minimum_chars: 3      // default = 1, The less minimum chars you want to use for your search, the slower the 'add' method gets
 });
 ```
 
